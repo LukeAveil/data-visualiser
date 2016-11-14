@@ -1,35 +1,77 @@
-var chart = c3.generate({
-  bindto: '#chart',
-  data: {
-    x: 'Country',
-    url: '/data/data.csv',
-    type: 'bar'
-  },
-  axis: {
-    x: {
-      type: 'category'
-    }
-  },
-  legend: {
-        show: false
-      }
-});
-
 function populationGraph() {
-  chart.load({
-    hide: ['GDP/Capita', 'Life Expectancy']
+  var chart = c3.generate({
+    bindto: '#chart',
+    data: {
+      x: 'Country',
+      url: '/data/data.csv',
+      hide: ['GDP/Capita', 'Life Expectancy'],
+      type: 'bar'
+    },
+    axis: {
+      x: {
+        type: 'category'
+      },
+      y: {
+        label: {
+          text: 'Population',
+          position: 'outer-center'
+        }
+      }
+    },
+    legend: {
+          show: false
+        }
   });
-
 }
 
 function gdpGraph() {
-  chart.load({
-    hide: ['Population', 'Life Expectancy']
+  var chart = c3.generate({
+    bindto: '#chart',
+    data: {
+      x: 'Country',
+      url: '/data/data.csv',
+      hide: ['Population', 'Life Expectancy'],
+      type: 'bar'
+    },
+    axis: {
+      x: {
+        type: 'category'
+      },
+      y: {
+        label: {
+          text: 'GDP/Capita',
+          position: 'outer-center'
+        }
+      }
+    },
+    legend: {
+          show: false
+        }
   });
 }
 
 function lifeGraph() {
-  chart.load({
-    hide: ['Population', 'GDP/Capita']
+  var chart = c3.generate({
+    bindto: '#chart',
+    data: {
+      x: 'Country',
+      url: '/data/data.csv',
+      hide: ['GDP/Capita', 'Population'],
+      type: 'bar'
+    },
+    axis: {
+      x: {
+        type: 'category'
+      },
+      y: {
+        label: {
+          text: 'Years',
+          position: 'outer-center'
+        }
+      }
+    },
+    legend: {
+          show: false
+        }
   });
 }
