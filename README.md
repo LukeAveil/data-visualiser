@@ -20,7 +20,7 @@ Once the server is running you can open your browser and navigate to ```localhos
 
  I settled on using a library based on d3 which is called c3, and has been developed for d3 beginners to help them ease into the steep learning curve. I used c3 to read the data from the CSV and build the graphs, but managed to use d3 to render the tabulated version of the data.
 
- ### Challenges
+### Challenges
 
  As mentioned my initial plan of combining React and d3 turned out to be biting off more than I could chew at this stage. Even though I dropped React in favour of a standard HTML page and ended up using a simplified d3 library, I found this project tough going in parts.
 
@@ -32,7 +32,7 @@ Once the server is running you can open your browser and navigate to ```localhos
 
  The second challenge I faced was caching issues with Chrome. For some reason I started having to clear my browser cache after every three or four loads of the page otherwise I was getting graphs rendered to the screen that were not meant to be there. This caused a big problem when I thought I had refactored my graph functions, but I was actually just seeing the graphs rendered by the original functions. This roadblock wasted a lot of time but I am glad I spotted it when I did otherwise I would be submitting a broken project.
 
- ### Going Forward
+### Going Forward
 
 I am pleased with the final outcome and it was a great introduction to d3/c3 and what it is capable of.
 
