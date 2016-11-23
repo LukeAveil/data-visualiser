@@ -13,14 +13,14 @@
       <div id="table"></div>
 
       <form action="">
-        <input class="button" type="radio" name="selection" onclick="populationGraph()">Population</button>
-        <input class="button" type="radio" name="selection" onclick="gdpGraph()">GDP</button>
-        <input class="button" type="radio" name="selection" onclick="lifeGraph()">Life Expectancy</button>
+        <input class="button" type="radio" name="selection" onclick="updateGraphSubset('Population')">Population</button>
+        <input class="button" type="radio" name="selection" onclick="updateGraphSubset('GDP/Capita')">GDP</button>
+        <input class="button" type="radio" name="selection" onclick="updateGraphSubset('Life Expectancy')">Life Expectancy</button>
       </form>
     </div>
 
     <div id="graph">
-      <div id="chart"></div>
+      <div id="chart" style="visibility:hidden;"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>

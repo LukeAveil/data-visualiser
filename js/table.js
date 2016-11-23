@@ -2,7 +2,7 @@ function loadData() {
   d3.text("data/data.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
 
-    var container = d3.select("#table")
+    d3.select("#table")
       .append("table")
 
       .selectAll("tr")
